@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Select! A HTML Select Menu Replacement</title>
+  <style>
+    :root {
+      --black: #121212;
+      --white: #f3f3f3;
+      --grey: #9f9f9f6b;
+      --lt-grey: #afafaf;
+      --orange: #eb6e00;
+      --border-color: --lt-gray;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  </style>
+  <script src="index.js" type="module"></script>
+</head>
+
+<body>
+  <select>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <super-select background-color="#f3f3f3" highlight-color="#eb6e00" text-color="#121212" border-color="#9f9f9f6b"
+    text='[{"key":"Option 1", "value":"1"},{"key":"Option 2", "value":"2"}, {"key":"Option 3", "value":"3"}]'>
+  </super-select>
+</body>
+
+</html>
